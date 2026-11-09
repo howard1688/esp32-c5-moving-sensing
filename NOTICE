@@ -1,0 +1,13 @@
+ESOC ESP32-C5 CSI experiment
+
+The firmware Wi-Fi, ESP-NOW, CSI configuration and gain-control integration
+are adapted from Espressif ESP-CSI get-started examples:
+https://github.com/espressif/esp-csi
+Copyright 2025-2026 Espressif Systems (Shanghai) CO LTD
+Licensed under Apache-2.0; see LICENSE.
+
+The ESP32-C5 keystroke project inspired the queue-based binary acquisition
+architecture. Its USB wire protocol and Python implementation are not used:
+https://github.com/TryTwoTop/esp32c5-csi-keystroke
+
+Dependencies retain their respective licenses.

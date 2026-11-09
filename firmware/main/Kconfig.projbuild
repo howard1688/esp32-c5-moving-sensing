@@ -1,0 +1,31 @@
+menu "ESOC CSI experiment"
+config CSI_NODE_ID
+    int "Device number (1=TX, 2=CSI receiver)"
+    range 1 2
+    default 1
+config CSI_SSID
+    string "5 GHz hotspot SSID"
+    default "ESOCESP32"
+config CSI_PASSWORD
+    string "Hotspot password"
+    default "ESOCESP32"
+config CSI_HOST_IP
+    string "UDP destination IPv4 (empty = DHCP gateway)"
+    default ""
+config CSI_UDP_PORT
+    int "UDP destination port"
+    range 1024 65535
+    default 5500
+config CSI_CONTROL_PORT
+    int "UDP control port"
+    range 1024 65535
+    default 5501
+config CSI_SEND_HZ
+    int "Probe target rate (Hz)"
+    range 10 1000
+    default 500
+config CSI_QUEUE_DEPTH
+    int "CSI sample queue depth (128 buffers about 256 ms at 500 Hz)"
+    range 32 256
+    default 128
+endmenu

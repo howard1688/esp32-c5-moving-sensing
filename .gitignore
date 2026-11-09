@@ -1,0 +1,13 @@
+.venv/
+.reference/
+__pycache__/
+firmware/build-*/
+firmware/sdkconfig
+firmware/sdkconfig.old
+firmware/sdkconfig.esp32c5-*
+firmware/managed_components/
+captures/
+artifacts/
+artifacts-*.log
+
+firmware/build/
